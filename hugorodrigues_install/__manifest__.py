@@ -10,7 +10,9 @@ Dummy module to install all hugorodrigues.net modules
     'depends': [
         'hugorodrigues_website',
         'disable_odoo_online',
-        'base_user_gravatar'
+        'base_user_gravatar',
+        'note_extended',
+        'calendar'
     ],
     'installable': True,
     'active': True,
