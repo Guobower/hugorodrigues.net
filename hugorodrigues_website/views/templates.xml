@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="homepage" inherit_id="website.homepage">
+        <xpath expr="//div[@id='wrap']" position="inside">
+            <section id="hmr-home" class="s_text_block_image_fw mb0 oe_img_bg">
+              <div class="container">
+                <div class="row">
+                  <div class="mt0 mb0 col-md-6 col-md-offset-6">
+                    <h2 t-field="res_company.name" align="left">Hugo Rodrigues</h2>
+                    <h4 t-field="res_company.rml_header1" align="left">Geek since 1995</h4>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id="hmr-projects" class="parallax s_parallax mb0 oe_img_bg" data-scroll-background-ratio="0.3">
+              <div class="oe_structure">
+                <section class="s_title bg-black-75">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <h1 class="text-center">Projects</h1>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="s_features bg-black-75">
+                  <div class="container">
+                    <div class="row mt16 mb16">
+                      <div class="text-center col-md-4">
+                        <span class="padding-xl fa fa-circle-o fa-5x" data-original-title="" title=""/>
+                        <h3 class="mb0 mt8">Odoo</h3>
+                        <p class="text-muted">
+                          <font class="text-gray-lighter" style="">Odoo modules development<br/></font>
+                        </p>
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <span class="padding-xl fa fa-server fa-5x" data-original-title="" title=""/>
+                        <h3 class="mt8 mb0">OpenStatus</h3>
+                        <p class="text-muted">
+                          <font class="text-gray-light" style="">See all your servers status in one place</font>
+                        </p>
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <span class="padding-xl fa fa-github-alt fa-5x" data-original-title="" title=""/>
+                        <h3 class="mt8 mb0">More on GitHub<br/></h3>
+                        <p class="text-muted">
+                          <font class="text-gray-light" style="">See all my projects on github</font>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </section>
+            <section id="hmr-workplaces" class="parallax s_parallax oe_img_bg oe_custom_bg" data-scroll-background-ratio="0.6">
+              <div class="oe_structure">
+                <section class="s_title bg-black-75">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <h1 class="text-center">Workplaces</h1>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="s_image_text bg-black-75" style="">
+                  <div class="container">
+                    <div class="row">
+                      <div class="mt64 mb32 col-md-7 col-md-offset-5"><h3>ThinkOpen Solutions<br/></h3>I started at ThinkOpen in mid-2016 were I started working with Odoo by creating custom modules for clients.<br/>I worked from accounting to production, passing by events and integrations with external services.<br/></div>
+                    </div>
+                  </div>
+                </section>
+                <section class="s_text_image bg-black-75">
+                  <div class="container">
+                    <div class="row">
+                      <div class="mt64 mb32 col-md-7 col-md-offset-1">
+                        <h3 style="text-align: right;">Fundação CEBI<br/></h3>
+                        <p style="text-align: right;">&amp;nbsp;My professional career started in 2015 at Fundação CEBI, just outside Lisbon.</p>
+                        <p style="text-align: right;">Here, I worked with in house software and built the help-desk system used by CEBI collaborators. ServiceDesk, uses the company Active Directory service as users and departments repository.<br/></p>
+                      </div>
+                      <div class="col-md-2 mb0 mt64">
+                        <a href="http://www.fcebi.org">
+                            <img alt="Fundação CEBI" class="img img-responsive pull-left mb16" data-original-title="" src="/hugorodrigues_website/static/img/fcebi.png" style="" title="Fundação CEBI"/>
+                        </a>
+                        <br/>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </section>
+            <section id="hmr-connect" class="parallax s_parallax mb0 oe_img_bg oe_custom_bg" data-scroll-background-ratio="0.3">
+              <div class="oe_structure">
+                <section class="s_features bg-black-75">
+                  <div class="container">
+                    <div class="row mt16 mb16">
+                      <div class="col-md-2 mt48">
+                        <h4 class="text-center mt16">Connect</h4>
+                      </div>
+                      <div class="text-center col-md-3">
+                          <a href="https://github.com/hmrodrigues">
+                              <span class="padding-xl fa fa-github-alt fa-5x" data-original-title="" style="" title=""/>
+                          </a>
+                      </div>
+                      <div class="text-center col-md-3">
+                          <a href="https://twitter.com/hmatosrodrigues">
+                              <span class="padding-xl fa fa-twitter fa-5x" data-original-title="" style="" title=""/>
+                          </a>
+                      </div>
+                      <div class="text-center col-md-3">
+                          <a href="https://www.linkedin.com/in/hmatosrodrigues">
+                              <span class="padding-xl fa fa-linkedin fa-5x" data-original-title="" style="" title=""/>
+                          </a>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </section>
+        </xpath>
+    </template>
+
+    <template id="layout_logo_show" inherit_id="website.show_sign_in">
+        <xpath expr="//header" position="replace" />
+    </template>
+    <template id="layout" inherit_id="website.layout" name="Footer">
+        <xpath expr="//footer" position="attributes">
+            <attribute name="class">bg-gray-darker</attribute>
+        </xpath>
+    </template>
+
+
+    <template id="footer_default" inherit_id="website.footer_default" customize_show="True" name="Hugo Rodrigues Footer">
+        <xpath expr="//div[@id='footer']" position="replace" />
+    </template>
+
+    <template id="layout_footer_copyright" inherit_id="website.layout_footer_copyright" name="Footer Copyright">
+        <xpath expr="//div[@class='pull-right']" position="replace">
+            <div class="pull-right" t-ignore="true" t-if="not editable">
+                With <a href="/web/login"><i class="fa fa-heart" aria-hidden="true"></i></a> from Lisbon. Powered by <a class="label label-danger"  href="https://odoo.com" target="_blank">Odoo</a>
+            </div>
+        </xpath>
+    </template>
+
+</odoo>

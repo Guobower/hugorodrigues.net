@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="assets_frontend" inherit_id="theme_default.assets_frontend" name="Hugo Rodrigues Front-End Assets">
+        <xpath expr="link" position="after">
+            <link rel="stylesheet" href="/hugorodrigues_website/static/src/less/homepage.less" />
+        </xpath>
+    </template>
+</odoo>

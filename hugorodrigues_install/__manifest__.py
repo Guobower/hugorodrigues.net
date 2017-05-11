@@ -1,0 +1,18 @@
+{
+    'name': 'Hugo Rodrigues Install',
+    'version': '10.0.0.1',
+    'description': """
+Dummy module to install all hugorodrigues.net modules
+""",
+    'author': 'Hugo Rodrigues',
+    'website': 'https://hugorodrigues.net',
+    'license': 'AGPL-3',
+    'depends': [
+        'hugorodrigues_website',
+        'disable_odoo_online',
+        'base_user_gravatar'
+    ],
+    'installable': True,
+    'active': True,
+    'auto_install': False
+}
