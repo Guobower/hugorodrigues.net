@@ -6,7 +6,7 @@ Dummy module to install all hugorodrigues.net modules
 """,
     'author': 'Hugo Rodrigues',
     'website': 'https://hugorodrigues.net',
-    'license': 'AGPL-3',
+    'license': 'Other OSI approved licence',
     'depends': [
         'hugorodrigues_website',
         'disable_odoo_online',

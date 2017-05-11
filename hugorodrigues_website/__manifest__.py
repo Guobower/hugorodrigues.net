@@ -6,7 +6,7 @@ Hugo Rodrigues Website
 """,
     'author': 'Hugo Rodrigues',
     'website': 'https://hugorodrigues.net',
-    'license': 'LGPL-3',
+    'license': 'Other OSI approved licence',
     'category': 'Website',
     'depends': [
         'theme_default',
