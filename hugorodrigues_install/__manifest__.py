@@ -12,7 +12,9 @@ Dummy module to install all hugorodrigues.net modules
         'disable_odoo_online',
         'base_user_gravatar',
         'note_extended',
-        'calendar'
+        'calendar',
+        'letsencrypt',
+        'password_security'
     ],
     'installable': True,
     'active': True,
