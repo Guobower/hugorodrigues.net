@@ -9,6 +9,7 @@ Dummy module to install all hugorodrigues.net modules
     'license': 'Other OSI approved licence',
     'depends': [
         'hugorodrigues_website',
+        'hugorodrigues_theme',
         'disable_odoo_online',
         'base_user_gravatar',
         'note_extended',
