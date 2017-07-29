@@ -8,6 +8,7 @@ Dummy module to install all hugorodrigues.net modules
     'website': 'https://hugorodrigues.net',
     'license': 'Other OSI approved licence',
     'depends': [
+        'base',
         'hugorodrigues_website',
         'hugorodrigues_theme',
         'disable_odoo_online',
