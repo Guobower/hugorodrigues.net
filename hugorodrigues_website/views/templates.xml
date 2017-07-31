@@ -66,7 +66,18 @@
                 <section class="s_image_text bg-black-75" style="">
                   <div class="container">
                     <div class="row">
-                      <div class="mt64 mb32 col-md-7 col-md-offset-5"><h3>ThinkOpen Solutions<br/></h3>I started at ThinkOpen in mid-2016 were I started working with Odoo by creating custom modules for clients.<br/>I worked from accounting to production, passing by events and integrations with external services.<br/></div>
+                      <div class="col-md-2 mb0 mt64">
+                        <a href="https://thinkopen.solutions">
+                          <img alt="ThinkOpen Solutions" class="img img-responsive pull-left mb16" data-original-title="" src="/hugorodrigues_website/static/img/tko.png" style="" title="ThinkOpen Solutions"/>
+                        </a>
+                        <br/>
+                      </div>
+                      <div class="mt64 mb32 col-md-7 col-md-offset-1">
+                          <h3>ThinkOpen Solutions<br/></h3>
+                          <p><font style="font-size: 14px;">I started at ThinkOpen in mid-2016 were I started working with Odoo by creating custom modules for clients.</font> I worked from accounting to production, passing by events and integration with external services</p>
+                          <p>As of mid-2017, I become a support consultant and system administrator. I helped our clients by explaining how Odoo works and resolving technical problems. A part from that, I also started managing the company cloud services.<br/></p>
+                          <br/>
+                      </div>
                     </div>
                   </div>
                 </section>
@@ -137,7 +148,7 @@
     <template id="layout_footer_copyright" inherit_id="website.layout_footer_copyright" name="Footer Copyright">
         <xpath expr="//div[@class='pull-right']" position="replace">
             <div class="pull-right" t-ignore="true" t-if="not editable">
-                With <a href="/web/login"><i class="fa fa-heart" aria-hidden="true"></i></a> from Lisbon. Powered by <a class="label label-danger"  href="https://odoo.com" target="_blank">Odoo</a>
+                With <a href="/web/login"><i class="fa fa-heart" aria-hidden="true"></i></a> from Lisbon. Powered by <a class="tko" href="https://thinkopen.solutions">ThinkOpen Solutions</a> with <a class="label label-danger"  href="https://odoo.com" target="_blank">Odoo</a>
             </div>
         </xpath>
     </template>
