@@ -15,7 +15,8 @@ Dummy module to install all hugorodrigues.net modules
         'base_user_gravatar',
         'note_extended',
         'calendar',
-        'url_shorter'
+        'url_shorter',
+        'letsencrypt',
     ],
     'installable': True,
     'active': True,
