@@ -66,7 +66,7 @@
                 <section class="s_image_text bg-black-75" style="">
                   <div class="container">
                     <div class="row">
-                      <div class="col-md-2 mb0 mt64">
+                      <div class="col-md-2 mb0 mt128">
                         <a href="https://thinkopen.solutions">
                           <img alt="ThinkOpen Solutions" class="img img-responsive pull-left mb16" data-original-title="" src="/hugorodrigues_website/static/img/tko.png" style="" title="ThinkOpen Solutions"/>
                         </a>
