@@ -1,6 +1,6 @@
 {
     'name': 'Hugo Rodrigues Install',
-    'version': '10.0.0.1',
+    'version': '11.0.1.0.0',
     'description': """
 Dummy module to install all hugorodrigues.net modules
 """,
@@ -10,13 +10,8 @@ Dummy module to install all hugorodrigues.net modules
     'depends': [
         'base',
         'hugorodrigues_website',
-        'hugorodrigues_theme',
-        'disable_odoo_online',
-        'base_user_gravatar',
+        'backend_theme',
         'note_extended',
-        'calendar',
         'url_shorter',
-        'letsencrypt',
     ],
-    'installable': False,
 }
