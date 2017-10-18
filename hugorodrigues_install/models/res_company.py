@@ -18,7 +18,7 @@ class ResCompany(models.Model):
         _logger.info('Setting partner data')
         partner.write({
             'name': 'Hugo Rodrigues',
-            'email': 'hugorodrigues@openmailbox.org',
+            'email': 'public@hugorodrigues.net',
             'website': 'hugorodrigues.net',
             'city': 'Lisboa',
             'state_id': self.env.ref('base.state_pt_pt-11').id,
