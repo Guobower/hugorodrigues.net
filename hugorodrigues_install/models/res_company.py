@@ -17,6 +17,8 @@ class ResCompany(models.Model):
         partner = company.partner_id
         company.write({
             'rml_header1': 'Geek since 1995',
+            'social_twitter': 'hmatosrodrigues',
+            'social_github': 'hmrodrigues'
             })
         logger.info('Setting partner data')
         partner.write({
