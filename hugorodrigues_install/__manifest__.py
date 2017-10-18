@@ -9,7 +9,7 @@
     'depends': [
         'base',
         'hugorodrigues_website',
-        'backend_theme',
+        'enterprise_theme',
         'note_extended',
         'url_shorter',
     ],
