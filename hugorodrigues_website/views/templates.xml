@@ -18,7 +18,7 @@
                   <div class="container">
                     <div class="row">
                       <div class="col-md-12">
-                        <h1 class="text-center">Projects</h1>
+                        <h1 class="text-center">Skills</h1>
                       </div>
                     </div>
                   </div>
@@ -34,17 +34,17 @@
                         </p>
                       </div>
                       <div class="col-md-4 text-center">
-                        <span class="padding-xl fa fa-server fa-5x" data-original-title="" title=""/>
-                        <h3 class="mt8 mb0">OpenStatus</h3>
+                        <span class="padding-xl fa fa-linux fa-5x" data-original-title="" title=""/>
+                        <h3 class="mt8 mb0">Linux</h3>
                         <p class="text-muted">
-                          <font class="text-gray-light" style="">See all your servers status in one place</font>
+                          <font class="text-gray-light" style="">System Administration</font>
                         </p>
                       </div>
                       <div class="col-md-4 text-center">
                         <span class="padding-xl fa fa-github-alt fa-5x" data-original-title="" title=""/>
-                        <h3 class="mt8 mb0">More on GitHub<br/></h3>
+                        <h3 class="mt8 mb0">GitHub<br/></h3>
                         <p class="text-muted">
-                          <font class="text-gray-light" style="">See all my projects on github</font>
+                          <font class="text-gray-light" style="">All my projects and contributtions</font>
                         </p>
                       </div>
                     </div>
@@ -58,7 +58,7 @@
                   <div class="container">
                     <div class="row">
                       <div class="col-md-12">
-                        <h1 class="text-center">Workplaces</h1>
+                        <h1 class="text-center">Work</h1>
                       </div>
                     </div>
                   </div>
