@@ -1,21 +1,24 @@
 # coding: utf-8
+"""res.company related code"""
 import logging
 
 from odoo import models
 
-_logger = logging.getLogger(__name__)
 
 class ResCompany(models.Model):
+    """Extendes res.company"""
     _inherit = 'res.company'
 
     def init(self):
-        _logger.info('Setting company data')
+        """Sets default company data"""
+        logger = logging.getLogger(__name__)
+        logger.info('Setting company data')
         company = self.env.ref('base.main_company')
         partner = company.partner_id
         company.write({
             'rml_header1': 'Geek since 1995',
             })
-        _logger.info('Setting partner data')
+        logger.info('Setting partner data')
         partner.write({
             'name': 'Hugo Rodrigues',
             'email': 'public@hugorodrigues.net',

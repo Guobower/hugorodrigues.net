@@ -1,2 +1,3 @@
 # -*- coding: utf-8 -*-
-import res_company
+"""Models"""
+from . import res_company

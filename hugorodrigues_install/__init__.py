@@ -1,2 +1,3 @@
 # -*- coding: utf-8 -*-
-import models
+"""Hugo Rodrigues Install"""
+from . import models
