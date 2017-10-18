@@ -18,7 +18,5 @@ Dummy module to install all hugorodrigues.net modules
         'url_shorter',
         'letsencrypt',
     ],
-    'installable': True,
-    'active': True,
-    'auto_install': False
+    'installable': False,
 }

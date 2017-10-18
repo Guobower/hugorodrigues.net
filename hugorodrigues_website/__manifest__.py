@@ -15,7 +15,5 @@ Hugo Rodrigues Website
         'views/assets.xml',
         'views/templates.xml',
     ],
-    'installable': True,
-    'active': True,
-    'auto_install': False
+    'installable': False,
 }

@@ -16,7 +16,5 @@ Hugo Rodrigues Backend Theme
         'views/assets.xml',
         'views/menu.xml',
     ],
-    'installable': True,
-    'active': True,
-    'auto_install': False
+    'installable': False,
 }
