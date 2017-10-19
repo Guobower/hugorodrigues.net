@@ -7,7 +7,7 @@
                 <div class="row">
                   <div class="mt0 mb0 col-md-6 col-md-offset-6">
                     <h2 t-field="res_company.name" align="left">Hugo Rodrigues</h2>
-                    <h4 t-field="res_company.rml_header1" align="left">Geek since 1995</h4>
+                    <h4 t-field="res_company.report_header" align="left">Geek since 1995</h4>
                   </div>
                 </div>
               </div>
@@ -131,8 +131,10 @@
         </xpath>
     </template>
 
-    <template id="layout_logo_show" inherit_id="website.show_sign_in">
-        <xpath expr="//header" position="replace" />
+    <template id="frontend_layout" inherit_id="portal.frontend_layout">
+        <xpath expr="//header" position="attributes">
+            <attribute name="class">hidden</attribute>
+        </xpath>
     </template>
     <template id="layout" inherit_id="website.layout" name="Footer">
         <xpath expr="//footer" position="attributes">
@@ -147,8 +149,8 @@
 
     <template id="layout_footer_copyright" inherit_id="website.layout_footer_copyright" name="Footer Copyright">
         <xpath expr="//div[@class='pull-right']" position="replace">
-            <div class="pull-right" t-ignore="true" t-if="not editable">
-                With <a href="/web/login"><i class="fa fa-heart" aria-hidden="true"></i></a> from Lisbon. Powered by <a class="tko" href="https://thinkopen.solutions">ThinkOpen Solutions</a> with <a class="label label-danger"  href="https://odoo.com" target="_blank">Odoo</a>
+            <div class="pull-right" t-ignore="true">
+                With <a href="/web/login"><i class="fa fa-heart" aria-hidden="true"></i></a> from Lisbon. Powered by <a class="label label-danger"  href="https://odoo.com" target="_blank">Odoo</a>
             </div>
         </xpath>
     </template>
