@@ -147,7 +147,9 @@
 
 
     <template id="footer_default" inherit_id="website.footer_default" customize_show="True" name="Hugo Rodrigues Footer">
-        <xpath expr="//div[@id='footer']" position="replace" />
+        <xpath expr="//div[@id='footer']" position="attributes">
+            <attribute name="class">hidden container hidden-print</attribute>
+        </xpath>
     </template>
 
     <template id="layout_footer_copyright" inherit_id="website.layout_footer_copyright" name="Footer Copyright">
