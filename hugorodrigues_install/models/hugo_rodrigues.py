@@ -28,7 +28,7 @@ class ResConfigSettings(models.AbstractModel):
             }
 
         logger.info('Setting root data')
-        root = self.env.ref('base.partner_root')
+        root = self.env.ref('base.user_root')
         root.write(company_values)
         root.write({
             'signature': '<p><span data-o-mail-quote="1">-- <br data-o-mail-quote="1">Hugo Rodrigues</span><br data-o-mail-quote="1"><a href="https://github.com/hmrodrigues/" data-o-mail-quote="1"><span class="fa fa-1x fa-github-square text-beta" style="" title="" data-o-mail-quote="1"></span></a><font style="" data-o-mail-quote="1" class=" text-beta">&nbsp;</font><a href="https://twitter.com/hmatosrodrigues" data-o-mail-quote="1"><span class="fa fa-twitter-square fa-1x text-beta" style="" data-o-mail-quote="1"></span></a><font style="" data-o-mail-quote="1" class=" text-beta">&nbsp;</font><a href="https://www.linkedin.com/in/hmatosrodrigues/" data-o-mail-quote="1"><span class="fa fa-linkedin-square fa-1x text-beta" style="" title="" data-o-mail-quote="1"></span><span data-o-mail-quote="1"> </span></a></p>',
