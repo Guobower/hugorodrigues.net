@@ -5,4 +5,10 @@
         <field name="website_meta_description">Geek Since 1995</field>
         <field name="website_meta_keywords">odoo, hugo rodrigues, development, linux, system administration, github</field>
     </record>
+    <record id="website.contactus_page_ir_ui_view" model="ir.ui.view">
+        <field name="active" eval="False"/>
+    </record>
+    <record id="website.aboutus_page_ir_ui_view" model="ir.ui.view">
+        <field name="active" eval="False"/>
+    </record>
 </odoo>
