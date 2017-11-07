@@ -14,6 +14,7 @@
             </section>
             <section id="hmr-skills" class="parallax s_parallax oe_img_bg" data-scroll-background-ratio="0.9">
               <span class="s_parallax_bg" />
+              <span class="hmr_parallax_overlay" />
               <div class="oe_structure bg-black-75">
                 <section class="s_title">
                   <div class="container">
@@ -55,6 +56,7 @@
             </section>
             <section id="hmr-workplaces" class="parallax s_parallax oe_img_bg" data-scroll-background-ratio="1.3">
               <span class="s_parallax_bg" />
+              <span class="hmr_parallax_overlay" />
               <div class="oe_structure bg-black-75">
                 <section class="s_title">
                   <div class="container">
@@ -104,6 +106,7 @@
             </section>
             <section id="hmr-connect" class="parallax s_parallax oe_img_bg" data-scroll-background-ratio="0.9">
               <span class="s_parallax_bg" />
+              <span class="hmr_parallax_overlay" />
               <div class="oe_structure bg-black-75">
                 <section class="s_features">
                   <div class="container">
