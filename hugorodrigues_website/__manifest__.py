@@ -12,6 +12,7 @@ Hugo Rodrigues Website
         'theme_default',
     ],
     'data': [
+        'data/website_data.xml',
         'views/assets.xml',
         'views/templates.xml',
     ],

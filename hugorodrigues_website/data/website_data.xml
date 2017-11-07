@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="website.homepage_page" model="website.page">
+        <field name="website_meta_title">Hugo Rodrigues</field>
+        <field name="website_meta_description">Geek Since 1995</field>
+        <field name="website_meta_keywords">odoo, hugo rodrigues, development, linux, system administration, github</field>
+    </record>
+</odoo>
