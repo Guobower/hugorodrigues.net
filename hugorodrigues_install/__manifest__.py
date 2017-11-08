@@ -11,5 +11,7 @@
         'hugorodrigues_website',
         'note_extended',
         'url_shorter',
+        'enterprise_theme',
+        'web_no_bubble'
     ],
 }
