@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<odoo>
-    <template id="assets_backend" inherit_id="web.assets_backend" name="Hugo Rodrigues Back-End Assets">
-        <xpath expr="link" position="after">
-            <link rel="stylesheet" href="/hugorodrigues_backend_theme/static/src/less/navbar.less" />
-        </xpath>
-    </template>
-</odoo>
