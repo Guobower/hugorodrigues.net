@@ -115,17 +115,17 @@
                         <h4 class="text-center mt16">Connect</h4>
                       </div>
                       <div class="text-center col-md-3">
-                          <a href="https://github.com/hmrodrigues">
+                          <a t-attf-href="{{res_company.social_github}}">
                               <span class="padding-xl fa fa-github-alt fa-5x" data-original-title="" style="" title=""/>
                           </a>
                       </div>
                       <div class="text-center col-md-3">
-                          <a href="https://twitter.com/hmatosrodrigues">
+                          <a t-attf-href="{{res_company.social_twitter}}">
                               <span class="padding-xl fa fa-twitter fa-5x" data-original-title="" style="" title=""/>
                           </a>
                       </div>
                       <div class="text-center col-md-3">
-                          <a href="https://www.linkedin.com/in/hmatosrodrigues">
+                          <a t-attf-href="{{res_company.social_linkedin}}">
                               <span class="padding-xl fa fa-linkedin fa-5x" data-original-title="" style="" title=""/>
                           </a>
                       </div>
