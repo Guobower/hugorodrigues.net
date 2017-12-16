@@ -39,8 +39,9 @@ class ResConfigSettings(models.AbstractModel):
         company = self.env.ref('base.main_company')
         company.write({
             'report_header': 'Geek since 1995',
-            'social_twitter': 'hmatosrodrigues',
-            'social_github': 'hmrodrigues'
+            'social_twitter': 'https://twitter.com/hmatosrodrigues',
+            'social_github': 'https://github.com/hmrodrigues',
+            'social_linkedin': 'https://linkedin.com/in/hmatosrodrigues'
             })
         company.partner_id.write(company_values)
         return True
