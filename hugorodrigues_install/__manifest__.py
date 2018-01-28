@@ -10,5 +10,6 @@
         'hugorodrigues_website',
         'note_extended',
         'url_shorter',
+        'website_analytics_piwik'
     ],
 }
