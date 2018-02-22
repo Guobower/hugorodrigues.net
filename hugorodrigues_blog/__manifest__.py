@@ -10,9 +10,10 @@ Hugo Rodrigues Blog
     'category': 'Website',
     'depends': [
         'hugorodrigues_website',
-        'blog'
+        'website_blog'
     ],
     'data': [
         'views/assets.xml',
+        'views/templates.xml',
     ],
 }

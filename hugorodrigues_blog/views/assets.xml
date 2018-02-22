@@ -2,7 +2,7 @@
 <odoo>
     <template id="assets_frontend" inherit_id="theme_default.assets_frontend" name="Hugo Rodrigues Blog Assets">
         <xpath expr="link" position="after">
-            <link rel="stylesheet" href="/hugorodrigues_blog/static/src/less/homepage.less" />
+            <link rel="stylesheet" href="/hugorodrigues_blog/static/src/less/blog.less" />
         </xpath>
     </template>
 </odoo>
