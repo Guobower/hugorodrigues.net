@@ -8,6 +8,7 @@
     'license': 'Other OSI approved licence',
     'depends': [
         'hugorodrigues_website',
+        'hugorodrigues_blog',
         'url_shorter',
         'website_analytics_piwik'
     ],
