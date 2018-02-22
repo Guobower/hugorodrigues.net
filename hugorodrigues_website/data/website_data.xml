@@ -11,4 +11,7 @@
     <record id="website.aboutus_page_ir_ui_view" model="ir.ui.view">
         <field name="active" eval="False"/>
     </record>
+    <record id="portal.portal_show_sign_in" model="ir.ui.view">
+        <field name="active" eval="False"/>
+    </record>
 </odoo>
