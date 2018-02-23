@@ -142,6 +142,13 @@
             <attribute name="class">hidden</attribute>
         </xpath>
     </template>
+    
+    <template id="hide_layout" inherit_id="website.layout_logo_show">
+        <xpath expr="//a" position="attributes">
+            <attribute name="class">hidden</attribute>
+        </xpath>
+    </template>
+    
     <template id="layout" inherit_id="website.layout" name="Footer">
         <xpath expr="//footer" position="attributes">
             <attribute name="class">bg-gray-darker</attribute>

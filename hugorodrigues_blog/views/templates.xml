@@ -4,11 +4,8 @@
         <xpath expr="//header" position="attributes">
             <attribute name="class" />
         </xpath>
-    </template>
-    
-    <template id="hide_layout" inherit_id="website.layout_logo_show">
-        <xpath expr="//a" position="attributes">
-            <attribute name="class">hidden</attribute>
+        <xpath expr="//header/div[hasclass('navbar')]" position="attributes">
+            <attribute name="class">navbar navbar-default navbar-static-top bg-gray-darker</attribute>
         </xpath>
     </template>
 
