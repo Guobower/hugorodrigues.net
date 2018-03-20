@@ -9,6 +9,5 @@
     'depends': [
         'hugorodrigues_website',
         'url_shorter',
-        'website_analytics_piwik'
     ],
 }
