@@ -9,5 +9,6 @@
     'depends': [
         'hugorodrigues_website',
         'url_shorter',
+        'enterprise_theme'
     ],
 }
