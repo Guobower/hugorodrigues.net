@@ -3,27 +3,21 @@ header {
         border: none;
     }
 
-    .navbar-default .navbar-nav {
-        li {
-            a, &:hover, &:focus {
-                color: #FFF;
+    .navbar-nav {
+        li, li.active {
+            a {
+                color: #FFF !important;
+                background-color: transparent !important;
 
-                &:hover, &focus {
+                &:hover {
                     font-weight: bold;
                 }
             }
         }
-    }
 
-    .navbar-default .navbar-nav {
-        .active {
-            a, &:hover, &:focus {
-                background-color: transparent;
-                color: #FFF;
-
-                &:hover, &focus {
-                    font-weight: bold;
-                }
+        li.active {
+            a {
+                font-weight: bold;
             }
         }
     }
