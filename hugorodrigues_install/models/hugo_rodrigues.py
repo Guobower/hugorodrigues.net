@@ -51,4 +51,13 @@ class ResConfigSettings(models.AbstractModel):
             cron.write({'active': False})
         except:
             logger.warning("Can't find call home cron")
+
+        logger = logging.getLogger(__name__)
+        logger.info('Setting blog data')
+        blog = self.env.ref('website_blog.blog_blog_1')
+        blog.write({
+            'name': 'A geeks blog',
+            'subtitle': False,
+            })
+
         return True

@@ -1,6 +1,13 @@
 header {
     .navbar {
         border: none;
+
+        -webkit-transition: background-color 200ms linear;
+        transition: background-color 200ms linear;
+    }
+
+    .pg-on-top {
+        background-color: transparent !important;
     }
 
     .navbar-nav {
@@ -31,4 +38,12 @@ header {
             }
         }
     }
+}
+
+.blog-title {
+    padding: 15vh 0;
+    color: #FFF;
+    background-size: cover;
+    background-position: 50% 100%;
+    background-image: url('/hugorodrigues_blog/static/src/img/blog.jpg');
 }

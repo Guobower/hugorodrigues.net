@@ -5,8 +5,30 @@
             <attribute name="class" />
         </xpath>
         <xpath expr="//header/div[hasclass('navbar')]" position="attributes">
-            <attribute name="class">navbar navbar-default navbar-static-top bg-gray-darker</attribute>
+            <attribute name="class">navbar navbar-default navbar-fixed-top bg-gray-darker pg-on-top</attribute>
         </xpath>
     </template>
+
+    <template id="blog_post_short" inherit_id="website_blog.blog_post_short">
+        <xpath expr="//div[hasclass('oe_structure')][2]"
+            position="attributes">
+            <attribute name="class">oe_structure blog-title</attribute>
+        </xpath>
+        <xpath expr="//a[hasclass('o_facebook')]" position="replace" />
+        <xpath expr="//a[hasclass('o_google')]" position="replace" />
+    </template>
+
+    <template id="blog_post_complete"
+        inherit_id="website_blog.blog_post_complete">
+        <xpath expr="//a[hasclass('o_facebook_complete')]"
+            position="replace" />
+        <xpath expr="//a[hasclass('o_google_complete')]"
+            position="replace" />
+    </template>
+
+
+    <record id="website_blog.index_right" model="ir.ui.view">
+        <field name="active" eval="False" />
+    </record>
 
 </odoo>
