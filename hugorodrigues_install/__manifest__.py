@@ -10,6 +10,7 @@
         'hugorodrigues_website',
         'hugorodrigues_blog',
         'url_shorter',
-        'website_analytics_piwik'
+        'project',
+        'note_extended'
     ],
 }

@@ -44,4 +44,11 @@ class ResConfigSettings(models.AbstractModel):
             'social_linkedin': 'https://linkedin.com/in/hmatosrodrigues'
             })
         company.partner_id.write(company_values)
+
+        logger.info('Disable Odoo SA call home')
+        try:
+            cron = self.env.ref('mail.ir_cron_module_update_notification')
+            cron.write({'active': False})
+        except:
+            logger.warning("Can't find call home cron")
         return True
