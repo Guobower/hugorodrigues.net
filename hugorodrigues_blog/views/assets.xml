@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
     <template id="assets_frontend" inherit_id="theme_default.assets_frontend" name="Hugo Rodrigues Blog Assets">
-        <xpath expr="link" position="after">
+        <xpath expr="link[last()]" position="after">
+            <link rel="stylesheet"
+                href="/hugorodrigues_blog/static/src/less/navbar.less" />
             <link rel="stylesheet"
                 href="/hugorodrigues_blog/static/src/less/blog.less" />
+        </xpath>
+        <xpath expr="script[last()]" position="after">
             <script type="text/javascript"
                 src="/hugorodrigues_blog/static/src/js/navbar.js"></script>
         </xpath>
