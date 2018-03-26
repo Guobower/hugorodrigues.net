@@ -14,7 +14,9 @@ class ResConfigSettings(models.AbstractModel):
         logger = logging.getLogger(__name__)
         logger.info('Setting website data')
         res_config = self.env['res.config.settings'].create({})
-        res_config.write({'website_name': 'Hugo Rodrigues'})
+        res_config.write({
+            'default_external_email_server': True,
+            'alias_domain': 'hugodrigues.net'})
         res_config.execute()
 
         company_values = {
@@ -46,18 +48,7 @@ class ResConfigSettings(models.AbstractModel):
         company.partner_id.write(company_values)
 
         logger.info('Disable Odoo SA call home')
-        try:
-            cron = self.env.ref('mail.ir_cron_module_update_notification')
-            cron.write({'active': False})
-        except:
-            logger.warning("Can't find call home cron")
-
-        logger = logging.getLogger(__name__)
-        logger.info('Setting blog data')
-        blog = self.env.ref('website_blog.blog_blog_1')
-        blog.write({
-            'name': 'A geeks blog',
-            'subtitle': False,
-            })
+        cron = self.env.ref('mail.ir_cron_module_update_notification')
+        cron.write({'active': False})
 
         return True

@@ -11,7 +11,6 @@
         'hugorodrigues_blog',
         'hugorodrigues_project',
         'url_shorter',
-        'project',
         'note_extended'
     ],
 }
