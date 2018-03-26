@@ -22,7 +22,7 @@ class HugoRodriguesBlog(models.AbstractModel):
         logger.info('Setting config data')
         res_config = self.env['res.config.settings'].create({})
         res_config.write({
-            'auth_signup_uninvited': 'b2c'
+            'auth_signup_uninvited': 'b2c',
             'auth_signup_reset_password': True,
             'module_auth_oauth': True})
         res_config.execute()
