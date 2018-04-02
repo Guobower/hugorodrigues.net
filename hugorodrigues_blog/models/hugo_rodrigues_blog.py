@@ -24,11 +24,7 @@ class HugoRodriguesBlog(models.TransientModel):
         res_config = self.env['res.config.settings'].create({})
         res_config.write({
             'auth_signup_uninvited': 'b2c',
-            'auth_signup_reset_password': True,
-            'module_auth_oauth': True})
+            'auth_signup_reset_password': True})
         res_config.execute()
-
-        logger.info('Disable odoo oauth')
-        self.env.ref('auth_oauth.provider_openerp').write({'enabled': False})
 
         return True
