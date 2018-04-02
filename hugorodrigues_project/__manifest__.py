@@ -9,4 +9,7 @@
     'depends': [
         'project',
     ],
+    'data': [
+        'data/project.xml'
+    ]
 }
