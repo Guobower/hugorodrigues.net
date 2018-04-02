@@ -2,14 +2,15 @@
 """Used to set default values on some models"""
 import logging
 
-from odoo import models
+from odoo import models, api
 
 
-class HugoRodriguesWebsite(models.AbstractModel):
+class HugoRodriguesWebsite(models.TransientModel):
     """Used to set default values on some models"""
     _name = 'hugo.rodrigues.website'
 
-    def init(self):
+    @api.model
+    def doconfig(self):
         """Sets default data"""
         logger = logging.getLogger(__name__)
         logger.info('Hides contactus page')

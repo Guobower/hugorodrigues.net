@@ -12,10 +12,12 @@
     <template id="blog_post_short" inherit_id="website_blog.blog_post_short">
         <xpath expr="//div[hasclass('oe_structure')][2]"
             position="attributes">
-            <attribute name="class">oe_structure blog-title</attribute>
+            <attribute name="class" add="blog-title" separator=" " />
         </xpath>
         <xpath expr="//a[hasclass('o_facebook')]" position="replace" />
         <xpath expr="//a[hasclass('o_google')]" position="replace" />
+        <xpath expr="//span[hasclass('fa-tags')]" position="replace" />
+        <xpath expr="//t[@t-foreach='blog_post.tag_ids']" position="replace" />
     </template>
 
     <template id="blog_post_complete"
@@ -29,6 +31,22 @@
 
     <record id="website_blog.index_right" model="ir.ui.view">
         <field name="active" eval="False" />
+    </record>
+
+    <record id="website_blog.opt_blog_post_grid_layout" model="ir.ui.view">
+        <field name="active" eval="True" />
+    </record>
+
+    <record id="website_blog.opt_blog_post_author_avatar" model="ir.ui.view">
+        <field name="active" eval="True" />
+    </record>
+
+    <record id="website_blog.opt_blog_post_author_avatar_display" model="ir.ui.view">
+        <field name="active" eval="True" />
+    </record>
+
+    <record id="website_blog.opt_blog_post_complete_comment" model="ir.ui.view">
+        <field name="active" eval="True" />
     </record>
 
 </odoo>

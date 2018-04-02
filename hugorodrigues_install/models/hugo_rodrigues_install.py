@@ -2,14 +2,15 @@
 """Used to set default values on some models"""
 import logging
 
-from odoo import models
+from odoo import models, api
 
 
-class ResConfigSettings(models.AbstractModel):
+class HugoRodrigues(models.TransientModel):
     """Used to set default values on some models"""
-    _name = 'hugo.rodrigues'
+    _name = 'hugo.rodrigues.install'
 
-    def init(self):
+    @api.model
+    def doconfig(self):
         """Sets default data"""
         logger = logging.getLogger(__name__)
         logger.info('Setting website data')

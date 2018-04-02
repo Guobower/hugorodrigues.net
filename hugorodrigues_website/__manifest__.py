@@ -15,5 +15,6 @@ Hugo Rodrigues Website
         'data/website_data.xml',
         'views/assets.xml',
         'views/templates.xml',
+        'data/actions.xml'
     ],
 }

@@ -13,4 +13,7 @@
         'url_shorter',
         'note_extended'
     ],
+    'data': [
+        'data/actions.xml'
+    ]
 }
