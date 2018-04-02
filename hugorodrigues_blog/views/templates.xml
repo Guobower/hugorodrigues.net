@@ -7,6 +7,9 @@
         <xpath expr="//header/div[hasclass('navbar')]" position="attributes">
             <attribute name="class">navbar navbar-default navbar-fixed-top bg-gray-darker pg-on-top</attribute>
         </xpath>
+        <xpath expr="//main/*[1]" position="before">
+            <span class="noscroll-spacing" />
+        </xpath>
     </template>
 
     <template id="blog_post_short" inherit_id="website_blog.blog_post_short">
@@ -25,6 +28,8 @@
         <xpath expr="//a[hasclass('o_facebook_complete')]"
             position="replace" />
         <xpath expr="//a[hasclass('o_google_complete')]"
+            position="replace" />
+        <xpath expr="//p[@t-if='len(blog_post.tag_ids)']"
             position="replace" />
     </template>
 
@@ -47,6 +52,10 @@
 
     <record id="website_blog.opt_blog_post_complete_comment" model="ir.ui.view">
         <field name="active" eval="True" />
+    </record>
+    
+    <record id="portal.portal_show_sign_in" model="ir.ui.view">
+        <field name="active" eval="True"/>
     </record>
 
 </odoo>
