@@ -165,7 +165,7 @@
     <template id="layout_footer_copyright" inherit_id="website.layout_footer_copyright" name="Footer Copyright">
         <xpath expr="//div[hasclass('pull-right')]" position="replace">
             <div class="pull-right" t-ignore="true">
-                With <a href="/web/login"><i class="fa fa-heart" aria-hidden="true"></i></a> from Lisbon. Powered by <a class="label label-danger"  href="https://odoo.com" target="_blank">Odoo</a>
+                With <a href="/web/login"><i class="fa fa-heart" aria-hidden="true"></i></a> from Lisbon.
             </div>
         </xpath>
     </template>
