@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="blog_post_hello_world" model="blog.post">
+        <field name="name">Hello World</field>
+        <field name="subtitle"></field>
+        <field name="blog_id" ref="website_blog.blog_blog_1"/>
+        <field name="website_published" eval="True"/>
+        <field name="published_date" eval="time.strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="cover_properties">{"background-image": "url(/hugorodrigues_blog/static/src/img/post_hello_world.jpg)", "resize_class": "cover container-fluid cover_full", "background-color": "oe_black", "opacity": "0.6"}</field>
+        <field name="content"><![CDATA[
+<section class="s_image_text">
+<div class="container">
+    <div class="row">
+        <div class="col-md-2 col-md-offset-2 mt16">
+            <img class="img img-responsive mb16" src="/hugorodrigues_website/static/src/img/avatar.jpg"/>
+        </div>
+        <div class="col-md-6 mt32">
+            <h3>Hello World</h3>
+
+            <h4 data-chatter-id="counter_0/section/div/div/div">I'm Hugo Rodrigues and this is my blog</h4>
+        </div>
+    </div>
+</div>
+</section>
+<section class="s_text_block">
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2 mb16 mt16">
+            <p>
+                Finally, my blog is online. Here I'm going to share my passion about technology.
+            </p>
+            <p>
+                The biggest topics will be about <a href="https://odoo.com">Odoo</a>, an open-source business app suite, and Linux administration, but it will be another topics, I hope.
+            </p>
+        </div>
+    </div>
+</div>
+</section>
+<section class="s_text_block">
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2 mb16 mt16">
+            <p>
+                My passion with Linux started around 2009, when my first laptop arrived. It's odd but it's true, my first laptop came with Linux Caixa Mágica, a Portuguese distribuition based on Ubuntu.
+            </p>
+            <p>
+                But at the time, I was dependent on Windows (gamming on Linux was a dream) so I installed the Microsoft OS but always with the felling of exploring Linux.
+            </p>
+            <p>
+                I started with Ubuntu 9.10 on a virtual machine and after a couple of weeks I jumped to a dualboot system. The time was passing by and I started to use more Linux than Windows, until I finished by professional course (High School). With that done, I was no longer working with .Net (and games on Linux was a real thing), so Windows wasn't needed anymore.
+            </p>
+            <p>
+                During this journey, I explored a lot of Linux distros, from Debian to Fedora, passing by OpenSUSE and Mangeia, but I finally calm down on Arch Linux. On Arch I was felling like localhost, I was in controll of my system, until a few weaks ago. I got bored and what did I do, I replaced Arch by Alpine on my laptop, just to try new stuff.
+            </p>
+        </div>
+    </div>
+</div>
+</section>
+<section class="s_text_block">
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2 mb16 mt16">
+            <p>
+                I work with Odoo since I joined <a href="https://thinkopen.solutions">ThinkOpen Solutions</a> in 2016. I stared as a developer, building solutions for our clients. I worked with almost all base modules (Accouning, MRP, Warehouse, Events, etc) and even created some connectors to other plataforms.
+            </p>
+            <p>
+                After almost a year, I was invited to be the system adminitrator for our Cloud service, since the previous one was leaving the company, and so I did. After a few monhts, I got promoted to Cloud Manager. In a year and a half, I was jumped from "the new guy" to manager of the Cloud Services.
+            </p>
+            <p>
+                During this time, I learned a lot about Odoo and started to like it. Today, I use it for everything, from my website (and now blog) to manage by projects.
+            </p>
+            <p>
+                If by future is with Odoo, my dream is to work for Odoo SA, right in Belgium.
+            </p>
+        </div>
+    </div>
+</div>
+</section>
+<section class="s_text_block">
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2 mb16 mt16">
+            <p>
+                I hope you enjoy this blog as mutch I enjoy Linux and Odoo.
+            </p>
+            <p>
+                Best Regards,<br />
+                Hugo Rodrigues
+            </p>
+        </div>
+    </div>
+</div>
+</section>
+]]>
+        </field>
+    </record>
+</odoo>

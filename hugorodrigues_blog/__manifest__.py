@@ -15,6 +15,7 @@ Hugo Rodrigues Blog
     'data': [
         'views/assets.xml',
         'views/templates.xml',
-        'data/actions.xml'
+        'data/actions.xml',
+        'data/posts/01_hello_world.xml'
     ],
 }
