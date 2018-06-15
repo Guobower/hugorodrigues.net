@@ -38,10 +38,6 @@
         <field name="active" eval="False" />
     </record>
 
-    <record id="website_blog.opt_blog_post_grid_layout" model="ir.ui.view">
-        <field name="active" eval="True" />
-    </record>
-
     <record id="website_blog.opt_blog_post_author_avatar" model="ir.ui.view">
         <field name="active" eval="True" />
     </record>
