@@ -32,6 +32,5 @@ class VisitorTracker(http.Controller):
             'user_id': request.uid
             })
 
-        # TODO Map country in controller
-        # TODO Map browser
+        # TODO Create visit
         return request.make_response('', cookies=new_cookies)
