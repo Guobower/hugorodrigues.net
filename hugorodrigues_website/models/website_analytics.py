@@ -27,9 +27,6 @@ class WebsiteAnalyticsVisitor(models.Model):
                                  comodel_name="res.country", string="Country",
                                  store=True)
 
-    browser_ids = fields.Many2many(comodel_name="website.analytics.browser",
-                                   string="Browsers")
-
     @api.depends("ip")
     def _compute_country(self):
         if not geolite2:
@@ -52,10 +49,10 @@ class WebsiteAnalyticsVisit(models.Model):
     statitics"""
     _name = "website.analytics.visit"
 
-    analytics_user_id = fields.Many2one(comodel_name="website.analytics.visitor",
-                                        required=True, string="Visitor")
+    visitor_id = fields.Many2one(comodel_name="website.analytics.visitor",
+                                 required=True, string="Visitor")
 
-    page = fields.Char()
+    path = fields.Char()
     source = fields.Char()
     user_agent = fields.Char()
     browser_id = fields.Many2one(comodel_name="website.analytics.browser",
@@ -66,7 +63,7 @@ class WebsiteAnalyticsVisit(models.Model):
                             string="Operating System", store=True)
 
     @api.depends('user_agent')
-    def _compute_extrat_ua(self):
+    def _compute_extract_ua(self):
         if not user_agents:
             return
         Browser = self.env['website.analytics.browser'].sudo()

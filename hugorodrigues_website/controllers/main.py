@@ -8,10 +8,8 @@ class VisitorTracker(http.Controller):
 
     @http.route(['/website/visitor/tracker'], type='http', auth='public')
     def tracker(self, **post):
-        source_ip = http.request.httprequest.environ.get('REMOTE_ADDR', '')
-        user_agent = http.request.httprequest.environ.get('HTTP_USER_AGENT',
-                                                          '')
         WebsiteVisitor = request.env['website.analytics.visitor'].sudo()
+        WebsiteVisit = request.env['website.analytics.visit'].sudo()
         visitor = request.session.get('tracker_visitor_id', False)
         new_cookies = {}
         if not visitor:
@@ -28,9 +26,14 @@ class VisitorTracker(http.Controller):
         if isinstance(visitor, int):
             visitor = WebsiteVisitor.browse(visitor)
         visitor.write({
-            'ip': source_ip,
+            'ip': request.httprequest.remote_addr or '',
             'user_id': request.uid
             })
 
-        # TODO Create visit
+        # TODO prevent duplicated
+        user_agent = request.httprequest.environ.get('HTTP_USER_AGENT', '')
+        WebsiteVisit.create({'visitor_id': visitor.id,
+                             'user_agent': user_agent,
+                             'source': request.httprequest.referrer,
+                             'path': request.httprequest.path})
         return request.make_response('', cookies=new_cookies)
