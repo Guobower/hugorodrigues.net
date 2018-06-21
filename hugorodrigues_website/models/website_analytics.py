@@ -10,11 +10,11 @@ except (ImportError, RuntimeError):
 from odoo import models, api, fields
 
 
-class WebsiteAnalyticsUser(models.Model):
+class WebsiteAnalyticsVisitor(models.Model):
     """
     Used to set track visitors.
     """
-    _name = "website.analytics.user"
+    _name = "website.analytics.visitor"
 
     user_id = fields.Many2one(comodel_name="res.users", string="User")
     ip = fields.Char()
