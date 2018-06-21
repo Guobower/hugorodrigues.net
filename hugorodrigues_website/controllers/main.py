@@ -14,22 +14,19 @@ class VisitorTracker(http.Controller):
         WebsiteVisitor = request.env['website.analytics.visitor'].sudo()
         visitor = request.session.get('tracker_visitor_id', False)
         new_cookies = {}
-        try:
+        if not visitor:
+            # Find a existing visitor via cookies
+            visitor = request.httprequest.cookies.get('tracker_visitor_id',
+                                                      False)
             if visitor:
-                visitor = WebsiteVisitor.browse(visitor)
+                visitor = int(visitor)
             else:
-                # Find a existing visitor via cookies
-                visitor = request.httprequest.cookies.get('tracker_visitor_id',
-                                                          False)
-                if visitor:
-                    visitor = WebsiteVisitor.browse(int(visitor))
-                else:
-                    # Create a new visitor
-                    visitor = WebsiteVisitor.create({})
-                    new_cookies['tracker_visitor_id'] = str(visitor.id)
-                request.session['tracker_visitor_id'] = visitor.id
-        except:
-            return ''
+                # Create a new visitor
+                visitor = WebsiteVisitor.create({})
+                new_cookies['tracker_visitor_id'] = str(visitor.id)
+            request.session['tracker_visitor_id'] = visitor.id
+        if isinstance(visitor, int):
+            visitor = WebsiteVisitor.browse(visitor)
         visitor.write({
             'ip': source_ip,
             'user_id': request.uid
