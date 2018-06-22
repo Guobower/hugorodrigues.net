@@ -52,8 +52,6 @@ class WebsiteAnalyticsVisit(models.Model):
     visitor_id = fields.Many2one(comodel_name="website.analytics.visitor",
                                  required=True, string="Visitor")
 
-    path = fields.Char()
-    source = fields.Char()
     user_agent = fields.Char()
     browser_id = fields.Many2one(comodel_name="website.analytics.browser",
                                  compute="_compute_extract_ua",
@@ -61,6 +59,9 @@ class WebsiteAnalyticsVisit(models.Model):
     os_id = fields.Many2one(comodel_name="website.analytics.os",
                             compute="_compute_extract_ua",
                             string="Operating System", store=True)
+
+    page_ids = fields.One2many(comodel_name="website.analytics.visit.page",
+                               inverse_name="visit_id", string="Pages")
 
     @api.depends('user_agent')
     def _compute_extract_ua(self):
@@ -87,6 +88,19 @@ class WebsiteAnalyticsVisit(models.Model):
                                 })
             visit.browser_id = browser.id
             visit.os_id = os.id
+
+
+class WebsiteAnalyticsVisitPage(models.Model):
+    """
+    Used to set track visited pages
+    """
+    _name = "website.analytics.visit.page"
+
+    visit_id = fields.Many2one(comodel_name="website.analytics.visit",
+                               required=True, string="Visit")
+
+    path = fields.Char()
+    source = fields.Char()
 
 
 class WebsiteAnalyticsBrowsers(models.Model):
