@@ -1,2 +1,0 @@
-"""Controllers"""
-from . import main
