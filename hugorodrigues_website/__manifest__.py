@@ -1,9 +1,7 @@
+# pylint: disable=missing-docstring
 {
     'name': 'Hugo Rodrigues Website',
-    'version': '10.0.0.3',
-    'description': """
-Hugo Rodrigues Website
-""",
+    'version': '11.0.2.0.0',
     'author': 'Hugo Rodrigues',
     'website': 'https://hugorodrigues.net',
     'license': 'Other OSI approved licence',

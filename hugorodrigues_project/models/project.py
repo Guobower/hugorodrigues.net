@@ -1,4 +1,3 @@
-# coding: utf-8
 """Custom settings for projects and taks"""
 from odoo import models, api
 

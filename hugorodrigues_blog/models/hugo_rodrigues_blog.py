@@ -1,4 +1,3 @@
-# coding: utf-8
 """Used to set default values on some models"""
 import logging
 

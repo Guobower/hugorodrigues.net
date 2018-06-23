@@ -1,4 +1,3 @@
-# coding: utf-8
 """Used to set default values on some models"""
 import logging
 
@@ -12,6 +11,7 @@ class HugoRodrigues(models.TransientModel):
     @api.model
     def doconfig(self):
         """Sets default data"""
+        # pylint: disable=line-too-long
         logger = logging.getLogger(__name__)
         logger.info('Setting website data')
         res_config = self.env['res.config.settings'].create({})

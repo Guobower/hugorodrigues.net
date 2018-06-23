@@ -1,2 +1,2 @@
-# -*- coding: utf-8 -*-
+"""My blog"""
 from . import models
