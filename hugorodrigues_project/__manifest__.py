@@ -9,6 +9,8 @@
         'project',
     ],
     'data': [
-        'data/project.xml'
+        'views/project_task_view.xml',
+        'data/project.xml',
+        'data/actions.xml'
     ]
 }

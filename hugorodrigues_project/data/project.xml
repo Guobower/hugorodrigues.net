@@ -46,4 +46,8 @@
         <field name="sequence">100</field>
         <field name="fold" eval="True" />
     </record>
+
+    <delete model="project.task.type" id="project.project_stage_data_0" />
+    <delete model="project.task.type" id="project.project_stage_data_1" />
+    <delete model="project.task.type" id="project.project_stage_data_2" />
 </odoo>
