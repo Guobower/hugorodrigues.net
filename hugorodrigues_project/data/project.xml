@@ -32,7 +32,7 @@
         <field name="name">Testing</field>
         <field name="sequence">40</field>
         <field name="legend_blocked">Tests Failed</field>
-        <field name="legend_done">Teady to Deploy</field>
+        <field name="legend_done">Ready to Deploy</field>
     </record>
 
     <record id="stage_todeploy" model="project.task.type">
