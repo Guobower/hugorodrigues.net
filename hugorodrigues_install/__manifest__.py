@@ -10,7 +10,8 @@
         'hugorodrigues_blog',
         'hugorodrigues_project',
         'url_shorter',
-        'note_extended'
+        'note_extended',
+        'website_analytics_website'
     ],
     'data': [
         'data/actions.xml'
