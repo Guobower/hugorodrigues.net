@@ -43,10 +43,10 @@
                         </p>
                       </div>
                       <div class="col-md-4 text-center">
-                        <span class="padding-xl fa fa-github-alt fa-5x" data-original-title="" title=""/>
-                        <h3 class="mt8 mb0">GitHub<br/></h3>
+                        <span class="padding-xl fa fontello-aws fa-5x" data-original-title="" title=""/>
+                        <h3 class="mt8 mb0">Amazon Web Services<br/></h3>
                         <p class="text-muted">
-                          <font class="text-gray-light" style="">All my projects and contributtions</font>
+                          <font class="text-gray-light" style="">Manage a cloud infrastructure on AWS</font>
                         </p>
                       </div>
                     </div>
@@ -111,17 +111,19 @@
                 <section class="s_features">
                   <div class="container">
                     <div class="row mt16 mb16">
-                      <div class="col-md-2 mt48">
-                        <h4 class="text-center mt16">Connect</h4>
+                      <div class="text-center col-md-3">
+                          <a t-attf-href="{{res_company.social_gitlab}}">
+                              <span class="padding-xl fa fa-gitlab fa-5x" data-original-title="" style="" title=""/>
+                          </a>
                       </div>
                       <div class="text-center col-md-3">
-                          <a t-attf-href="{{res_company.social_github}}">
-                              <span class="padding-xl fa fa-github-alt fa-5x" data-original-title="" style="" title=""/>
+                          <a t-attf-href="{{res_company.social_mastodon}}">
+                              <span class="padding-xl fontello-mastodon fa fa-5x"></span>
                           </a>
                       </div>
                       <div class="text-center col-md-3">
                           <a t-attf-href="{{res_company.social_twitter}}">
-                              <span class="padding-xl fa fa-twitter fa-5x" data-original-title="" style="" title=""/>
+                              <span class="padding-xl fa-twitter fa fa-5x"></span>
                           </a>
                       </div>
                       <div class="text-center col-md-3">

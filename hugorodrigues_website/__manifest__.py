@@ -13,6 +13,7 @@
         'data/website_data.xml',
         'views/assets.xml',
         'views/templates.xml',
+        'views/res_company_view.xml',
         'data/actions.xml'
     ],
 }

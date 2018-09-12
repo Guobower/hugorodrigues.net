@@ -4,6 +4,7 @@
         <xpath expr="link" position="after">
             <link rel="stylesheet" href="/hugorodrigues_website/static/src/less/main.less" />
             <link rel="stylesheet" href="/hugorodrigues_website/static/src/less/homepage.less" />
+            <link rel="stylesheet" href="/hugorodrigues_website/static/lib/fontello/css/fontello.css" />
         </xpath>
     </template>
 </odoo>
