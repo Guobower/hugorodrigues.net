@@ -43,7 +43,7 @@
                         </p>
                       </div>
                       <div class="col-md-4 text-center">
-                        <span class="padding-xl fa fontello-aws fa-5x" data-original-title="" title=""/>
+                        <span class="padding-xl fa fontello-aws fa-5x" style="padding-right: 68px !important;" data-original-title="" title=""/>
                         <h3 class="mt8 mb0">Amazon Web Services<br/></h3>
                         <p class="text-muted">
                           <font class="text-gray-light" style="">Manage a cloud infrastructure on AWS</font>
