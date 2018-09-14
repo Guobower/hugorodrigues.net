@@ -13,7 +13,4 @@
         'note_extended',
         'website_analytics_website'
     ],
-    'data': [
-        'data/actions.xml'
-    ]
 }

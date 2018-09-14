@@ -11,6 +11,5 @@
     'data': [
         'views/project_task_view.xml',
         'data/project.xml',
-        'data/actions.xml'
     ]
 }

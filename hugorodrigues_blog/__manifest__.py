@@ -12,7 +12,6 @@
     ],
     'data': [
         'views/assets.xml',
-        'views/templates.xml',
-        'data/actions.xml',
+        'views/templates.xml'
     ],
 }
